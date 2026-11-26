@@ -400,3 +400,16 @@ Every error returns consistent JSON with `error` and `message`:
   "message": "Payment declined for this mock order."
 }
 ```
+
+---
+
+## Final Note
+
+- **Root URL (`GET /`)**: Opening `http://localhost:4001/` in a browser or `curl` returns a JSON welcome response listing all available endpoints (`/health`, `/api/products`, `/api/products/:id`, `/api/orders`).
+- **If an older server is already running on port `4001`**: Press `Ctrl+C` in that terminal and run `npm run dev` again so the latest changes take effect.
+- **Quick Daily Workflow**:
+  1. `npm run dev` — start the mock server locally (`http://localhost:4001`)
+  2. `npm test` — run all 30 Playwright API tests
+  3. `npm run report` — open the Playwright HTML test report
+  4. When the real backend is ready, set `API_BASE_URL` and run `npm test` against it
+
