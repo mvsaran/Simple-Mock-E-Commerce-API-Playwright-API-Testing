@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Studio Headphones",
+    "price": 79.99,
+    "category": "Audio",
+    "stock": 15
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Gaming Keyboard",
+    "price": 119.5,
+    "category": "Peripherals",
+    "stock": 10
+  },
+  {
+    "id": 3,
+    "name": "Ergonomic Wireless Mouse",
+    "price": 49.99,
+    "category": "Peripherals",
+    "stock": 25
+  },
+  {
+    "id": 4,
+    "name": "27-Inch 4K Monitor",
+    "price": 299.0,
+    "category": "Displays",
+    "stock": 8
+  },
+  {
+    "id": 5,
+    "name": "Full HD Streaming Webcam",
+    "price": 89.0,
+    "category": "Cameras",
+    "stock": 12
+  }
+]

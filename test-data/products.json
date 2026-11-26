@@ -1,0 +1,16 @@
+{
+  "expectedService": {
+    "status": "UP",
+    "service": "Mock E-Commerce API"
+  },
+  "minimumProductCount": 5,
+  "existingProduct": {
+    "id": 1,
+    "name": "Wireless Studio Headphones",
+    "price": 79.99,
+    "category": "Audio",
+    "stock": 15
+  },
+  "nonExistingProductId": 9999,
+  "invalidProductIds": ["abc", "0", "-5"]
+}

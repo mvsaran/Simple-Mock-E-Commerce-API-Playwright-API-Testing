@@ -1,0 +1,63 @@
+{
+  "validOrder": {
+    "productId": 1,
+    "quantity": 2,
+    "customerName": "Test Customer"
+  },
+  "multiItemOrder": {
+    "productId": 2,
+    "quantity": 3,
+    "customerName": "QA Automation User"
+  },
+  "expectedPrices": {
+    "1": 79.99,
+    "2": 119.5
+  },
+  "invalidOrders": {
+    "missingProductId": {
+      "quantity": 2,
+      "customerName": "Test Customer"
+    },
+    "missingQuantity": {
+      "productId": 1,
+      "customerName": "Test Customer"
+    },
+    "zeroQuantity": {
+      "productId": 1,
+      "quantity": 0,
+      "customerName": "Test Customer"
+    },
+    "negativeQuantity": {
+      "productId": 1,
+      "quantity": -2,
+      "customerName": "Test Customer"
+    },
+    "decimalQuantity": {
+      "productId": 1,
+      "quantity": 1.5,
+      "customerName": "Test Customer"
+    },
+    "missingCustomerName": {
+      "productId": 1,
+      "quantity": 2
+    },
+    "nonExistingProduct": {
+      "productId": 9999,
+      "quantity": 1,
+      "customerName": "Test Customer"
+    },
+    "exceedingStock": {
+      "productId": 1,
+      "quantity": 999,
+      "customerName": "Test Customer"
+    }
+  },
+  "scenarios": {
+    "success": "success",
+    "paymentFailure": "payment_failure",
+    "serverError": "server_error",
+    "unavailable": "unavailable",
+    "timeout": "timeout",
+    "unsupported": "unknown_scenario"
+  }
+}

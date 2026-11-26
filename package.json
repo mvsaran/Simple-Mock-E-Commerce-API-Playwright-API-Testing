@@ -1,0 +1,35 @@
+{
+  "name": "mock-ecommerce-api-playwright",
+  "version": "1.0.0",
+  "description": "Beginner-friendly mock e-commerce API built with Node.js, Express, and TypeScript, tested with Playwright API automation.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "test": "playwright test",
+    "test:health": "playwright test tests/health.spec.ts",
+    "test:products": "playwright test tests/products.spec.ts",
+    "test:orders": "playwright test tests/orders.spec.ts",
+    "test:file": "playwright test",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "mock-api",
+    "express",
+    "typescript",
+    "playwright",
+    "api-testing"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
